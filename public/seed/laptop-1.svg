@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="hsl(40 40% 96%)"/>
+  <g transform="translate(100,90)">
+    <rect x="0" y="0" width="200" height="120" rx="6" fill="hsl(40 30% 30%)"/>
+    <rect x="8" y="8" width="184" height="104" rx="3" fill="hsl(40 70% 60%)"/>
+    <path d="M-14 128 L214 128 L228 140 Q230 144 224 144 L-24 144 Q-30 144 -28 140 Z" fill="hsl(40 25% 45%)"/>
+  </g>
+  <text x="200" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="hsl(40 30% 45%)">SS Tech · Laptop 1</text>
+</svg>

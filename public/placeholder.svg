@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  <g transform="translate(100,90)">
+    <rect x="0" y="0" width="200" height="120" rx="6" fill="#334155"/>
+    <rect x="8" y="8" width="184" height="104" rx="3" fill="#60a5fa"/>
+    <path d="M-14 128 L214 128 L228 140 Q230 144 224 144 L-24 144 Q-30 144 -28 140 Z" fill="#475569"/>
+  </g>
+  <text x="200" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">SS Tech</text>
+</svg>
