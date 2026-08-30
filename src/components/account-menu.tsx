@@ -67,11 +67,13 @@ export function AccountMenu() {
       <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuLabel className="truncate">{user.name}</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem asChild>
-          <Link href="/account/orders">
-            <PackageIcon className="size-4" /> My orders
-          </Link>
-        </DropdownMenuItem>
+        {user.role !== "admin" && (
+          <DropdownMenuItem asChild>
+            <Link href="/account/orders">
+              <PackageIcon className="size-4" /> My orders
+            </Link>
+          </DropdownMenuItem>
+        )}
         {user.role === "admin" && (
           <DropdownMenuItem asChild>
             <Link href="/admin">

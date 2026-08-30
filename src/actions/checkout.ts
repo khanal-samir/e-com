@@ -56,6 +56,10 @@ export async function checkoutAction(
   }
 
   const { paymentMethod } = parsed.data;
+  // admins are staff: they manage the store, they don't buy from it
+  if (session.user.role === "admin") {
+    return { error: "Admin accounts cannot place orders." };
+  }
   // sandbox wallets hold only a few rupees: in test mode the gateway is
   // always charged a constant Rs. 10 while the order keeps its real total
   const testMode = process.env.PAYMENT_TEST_MODE === "1";
